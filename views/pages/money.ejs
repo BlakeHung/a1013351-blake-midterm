@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <h2>「<%=userName %>」存錢桶</h2>
+  <form action="saveMoney" method="post">
+     <input name = "money" type="text">
+  <input type="submit" value="存錢">
+
+  </form>
+ 
+
+  <h3>現在我的存錢桶有 <%= moneyTotal %> 元</h3>
+  <ul>
+    <% for(var i = 1; i < moneyList.length; i++) { %>
+    <li>存了 <%= moneyList[i] %> 元</li>
+    <% } %>
+  </ul>
+</body>
+</html>
